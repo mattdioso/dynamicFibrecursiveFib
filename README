@@ -1,0 +1,13 @@
+command line tool to help understand dynamic programming and recursion. It also provides time stamps after each operation to highlight performance differences between algorithms. Uses Java's BigInteger to avoid integer overflows
+
+How to Use:
+Compile with javac fibonacciTesting.java
+
+Usage
+
+java fibonacciTesting {algorithm} {number}
+
+Algorithms:
+	"dynamic": uses memoization to calculate nth Fibonacci Number. Also known as "Bottom-Up Dynamic Programming" where we build solution for each case off of the previously calculated cases. O(n)
+	"memo": uses "top-down" dynamic programming. Recursively calls down to calculate fibonacci numbers and stores values in array to "cache" for later. O(n)
+	"recursive": recursively calculates fibonacci numbers without using an array for reference. O(2^n)
